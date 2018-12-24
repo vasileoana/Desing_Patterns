@@ -1,4 +1,11 @@
 public class Main {
+//    Este utilizat atunci când trebuie să construim foarte multe obiecte/instanțe
+//    ale unei clase, însă majoritatea obiectelor au o parte comună, sau
+//    permanentă.
+//    Astfel prin utilizarea design pattern-ului Flyweight se reduce consumul de
+//    memorie, păstrându-se într-o singură instanță partea comună.
+//    Partea care diferă de la un obiect la altul este salvată într-o altă clasă și
+//    este adăugat după construirea obiectelor.
 
     public static void main(String[] args){
         FabricaDePachete fabricaPachete = new FabricaDePachete();
