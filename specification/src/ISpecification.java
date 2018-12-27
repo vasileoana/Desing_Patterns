@@ -1,8 +1,0 @@
-public interface ISpecification {
-    boolean isSatisfiedBy(Object candidate);
-    ISpecification And(ISpecification other);
-    ISpecification AndNot(ISpecification other);
-    ISpecification Or(ISpecification other);
-    ISpecification OrNot(ISpecification other);
-    ISpecification Not();
-}
