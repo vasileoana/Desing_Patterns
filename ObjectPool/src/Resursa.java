@@ -8,23 +8,7 @@ public class Resursa {
         this.descriere = descriere;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getDescriere() {
-        return descriere;
-    }
-
-    public void setDescriere(String descriere) {
-        this.descriere = descriere;
-    }
-
-    public  void utilizeaza(){
+      public  void utilizeaza(){
         System.out.println("Id: " + this.id + "Resursa: "+ this.descriere);
     }
 

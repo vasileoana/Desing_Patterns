@@ -1,0 +1,14 @@
+from: https://www.upgrad.com/blog/mvc-architecture-in-java/
+MVC architectural pattern follows an elementary idea – we must separate the responsibilities in any application on the following basis:
+
+Model: Handles data and business logic.
+View: Presents the data to the user whenever asked for.
+Controller: Entertains user requests and fetch necessary resources.
+
+
+A Simple Implementation of MVC using Java
+We will have the following three:
+
+StudentObject : the model.
+StudentView: view class to print details on the console.
+StudentController: a controller that stores data in studentObject and updates StudentView accordingly

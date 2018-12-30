@@ -14,6 +14,7 @@ public class Main {
         if(r2!= null){
             r2.utilizeaza();
         }
+        objectPool.releaseResursa(r2);
 
 
     }
