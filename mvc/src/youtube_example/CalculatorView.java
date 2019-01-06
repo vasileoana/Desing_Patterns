@@ -20,6 +20,7 @@ public class CalculatorView extends JFrame{
         calcPanel.add(calcSolution);
         this.add(calcPanel);
     }
+    
 
     public int getFirstNumber() {
         return Integer.parseInt(firstNumber.getText());

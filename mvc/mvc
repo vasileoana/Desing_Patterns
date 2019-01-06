@@ -1,0 +1,11 @@
+MVC
+All input coming from user interaction,
+such mouse click. are directed to the
+Controller first.
+The Controller then kick off some functionality.
+ A single Controller may render many different
+ Views based on the operation being executed.
+ Also view doesn’t have any knowledge of or reference to
+ the Controller. Controller interact with
+ the Model and pass the model to the View. So there
+is a knowledge between the View and Model  being passed on to it.

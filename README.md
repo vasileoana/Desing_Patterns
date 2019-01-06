@@ -10,3 +10,4 @@ http://acs.ase.ro/software-quality-testing
 https://www.tutorialspoint.com/
 
 https://github.com/marcinkoziarz/specification-pattern-example
+

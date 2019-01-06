@@ -7,7 +7,7 @@ import example.view.StudentView;
 public class Main {
     public static void main(String[] args) {
         //fetch student record based on his roll no from the database
-        Student model =  retriveStudentFromDatabase();
+        Student model =  retrieveStudentFromDatabase();
 
         //Create a view : to write student details on console
         StudentView view = new StudentView();
@@ -21,7 +21,7 @@ public class Main {
         controller.updateView();
     }
 
-    private static Student retriveStudentFromDatabase(){
+    private static Student retrieveStudentFromDatabase(){
         Student student = new Student();
         student.setName("Robert");
         student.setRollNo("10");
