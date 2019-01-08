@@ -27,7 +27,7 @@ public class StudentView extends JFrame {
 
         JPanel newPanel = new JPanel();
         newPanel.add(yearCollegeChangede);
-        newPanel.setPreferredSize(new Dimension(2000,2000));
+      //  newPanel.setPreferredSize(new Dimension(2000,2000));
         studentPanel.add(newPanel);
     }
 
@@ -86,7 +86,7 @@ public class StudentView extends JFrame {
     }
 
     public void setYearCollegeChangede(String yearCollegeChangede) {
-        this.yearCollegeChangede.setText("<html>"+yearCollegeChangede+"</br></html>");
+        this.yearCollegeChangede.setText("<html>"+yearCollegeChangede+"<br/></html>");
 
     }
 }
