@@ -18,7 +18,11 @@ public class MessageView {
         displayButton();
     }
 
+
+
+
     public void displayButton(){
+
         System.out.println("Enter new message to concatenate it the old one!");
         Scanner scanner = new Scanner(System.in);
         String line = scanner.nextLine();

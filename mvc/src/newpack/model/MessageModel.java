@@ -1,5 +1,6 @@
 package newpack.model;
 
+
 public class MessageModel {
     private String message;
 
@@ -15,4 +16,5 @@ public class MessageModel {
         this.message += message;
         return this.message;
     }
+
 }

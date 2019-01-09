@@ -1,0 +1,3 @@
+morometii;preda;45;7;5
+ion;liviu rebreanu;45;11;7
+Baltagul;Sadoveanu;52;90;9
