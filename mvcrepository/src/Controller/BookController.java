@@ -13,12 +13,11 @@ public class BookController {
     private BookModel bookModel;
     private BookView bookView;
 
-    public BookController() {
-        bookView = new BookView();
-        bookModel = new BookModel();
-
+    public BookController(BookModel bookM, BookView bookV) {
+        bookModel = bookM;
+        bookView = bookV;
         //set listeners
-        bookView.setReadAllBooksListener(new MyActionListenerAdapter() {
+        this.bookView.setReadAllBooksListener(new MyActionListenerAdapter() {
             @Override
             public void actionPerformed(MyActionEventAdapter e) {
                 List<BookModel> books = getAllBooks();
@@ -41,14 +40,14 @@ public class BookController {
         bookView.setUpdateASpecificBookByStockListener(e -> {
             String id = e.getValue();
             String newStock = e.getObject().toString();
-            BookModel bookModel = updateBookByStock(newStock, id);
+            bookModel = updateBookByStock(newStock, id);
             bookView.displayOneBook(bookModel.toString());
         });
         bookView.setAddSBookListener(new MyActionListenerAdapter() {
             @Override
             public void actionPerformed(MyActionEventAdapter e) {
                 List<String> myBookValues = (List<String>) e.getObject();
-                BookModel bookModel = new BookModel(myBookValues.get(0), myBookValues.get(1), myBookValues.get(2), myBookValues.get(3));
+                bookModel = new BookModel(myBookValues.get(0), myBookValues.get(1), myBookValues.get(2), myBookValues.get(3));
                 addBook(bookModel);
                 bookView.displayMessage("Carte adaugata");
             }
@@ -60,11 +59,6 @@ public class BookController {
                 bookView.displayMessage("Schimbari efectuate");
             }
         });
-    }
-
-    public BookController(BookModel bookModel, BookView bookView) {
-        this.bookModel = bookModel;
-        this.bookView = bookView;
     }
 
     public void initStartView() {
